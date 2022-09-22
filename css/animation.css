@@ -1,0 +1,75 @@
+/* Typing Animation */
+#home h1::after {
+  content: '';
+  top: 0;
+  left: 0;
+  animation: typing 6s infinite;
+  -webkit-animation: typing 6s infinite;
+}
+
+@keyframes typing {
+  0%  {content: 'L|';}
+  1%  {content: 'La|';}
+  2%  {content: 'Lar|';}
+  3%  {content: 'Larr|'};
+  4%  {content: 'Larry|';}
+  5%  {content: 'Larry |'};
+  6%  {content: 'Larry D|';}
+  7%  {content: 'Larry Da|';}
+  8%  {content: 'Larry Dan|';}
+  9%  {content: 'Larry Dani|';}
+  10% {content: 'Larry Dania|';}
+  11% {content: 'Larry Danial|';}
+  12% {content: 'Larry Dania|';}
+  13% {content: 'Larry Dani|';}
+  14% {content: 'Larry Dan|';}
+  15% {content: 'Larry Da|';}
+  16% {content: 'Larry D|';}
+  17% {content: 'Larry |'};
+  18% {content: 'Larry|';}
+  19% {content: 'Larr|';}
+  20% {content: 'Lar|';}
+  21% {content: 'La|';}
+  22% {content: 'L|';}
+  23% {content: 'L|'};
+  24% {content: '|';}
+  25% {content: '|';}
+  26% {content: 'D|';}
+  27% {content: 'De|';}
+  28% {content: 'Dev|';}
+  29% {content: 'Deve|';}
+  30% {content: 'Devel|';}
+  31% {content: 'Develo|';}
+  32% {content: 'Develop|';}
+  33% {content: 'Develope|';}
+  34% {content: 'Developer|';}
+  35% {content: 'Developer|';}
+  36% {content: 'Develope|';}
+  37% {content: 'Develop|';}
+  38% {content: 'Develo|';}
+  39% {content: 'Devel|';}
+  40% {content: 'Deve|';}
+  42% {content: 'Dev|';}
+  44% {content: 'De|';}
+  46% {content: 'D|';}
+  48% {content: '|';}
+  50% {content: '|';}
+  52% {content: '|';}
+  54% {content: 'D|';}
+  56% {content: 'De|';}
+  58% {content: 'Des|';}
+  60% {content: 'Desi|';}
+  62% {content: 'Desig|';}
+  64% {content: 'Desige|';}
+  66% {content: 'Desiger|';}
+  68% {content: 'Desiger|';}
+  70% {content: 'Desige|';}
+  72% {content: 'Desig|';}
+  74% {content: 'Desi|';}
+  76% {content: 'Des|';}
+  78% {content: 'De|';}
+  80% {content: 'D|';}
+  82% {content: '|';}
+  84% {content: '|';}
+  100%{content: '|';}
+}

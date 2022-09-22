@@ -1,0 +1,98 @@
+@media screen and (min-width: 1200px) {
+  /* Contact */
+  #contact .contact-info,
+  #contact .contact-form {
+    max-width: 75%;
+    margin: auto
+  }
+}
+
+@media screen and (max-width: 991.8px) {
+  /* Navbar */
+  ul.navbar-nav {
+    text-align: center;
+  }
+  nav li a.active{
+    width: fit-content;
+    display: inline-block;
+  }
+  .navbar-collapse {
+    position: relative;
+  }
+  .navbar-collapse::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20%;
+    height: 1px;
+    background-color: var(--light-color);
+    width: 150%;
+  }
+  nav li {
+    padding: 25px 15px 0px;
+  }
+  nav li:last-child {
+    padding-bottom: 20px;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  /* Contact */
+   #contact .contact-form button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Navbar */
+  nav li a.active::before {
+    width: 100%;
+  }
+
+  /* Home */
+  #home .overlay > span {
+    font-size: 38px;
+  }
+  #home h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  /* Client */
+  #clients .client-card p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* General */
+  section .section-header {
+    font-size: 30px;
+  }
+  #about, #services, #works {
+    padding-bottom: 10px !important;
+  }
+  #clients .section-header,
+  #blog .section-header,
+  #contact .section-header {
+    margin-bottom: 25px !important;
+  }
+
+  /* Work */
+  #works .nav-link {
+    margin: 8px;
+  }
+
+  /* Statistics */
+  .statistics-section .item h3 {
+    font-size: 28px
+  }
+  .statistics-section .item h6 {
+    font-size: 14px;
+  }
+
+  /* Contact */
+  #contact .info-card {
+    margin-bottom: 25px;
+  }
+}
