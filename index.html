@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Daniels</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="./images/faviconio-logo/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <!-- <link rel="stylesheet" href="css/animation.css"> -->
   </head>
   <body>
     <header>
       <!-- Navbar -->
-      <nav id="main-navbar" class="navbar navbar-expand-lg bg-white fixed-top text-capitalize px-3 mb-3">
+      <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top text-capitalize px-3 mb-3">
         <div class="container">
           <a class="navbar-brand text-uppercase" href="#">Daniels</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,9 +60,9 @@
           <div class="overlay text-center py-5">
             <span>Hello</span>
             <h1 class="my-4">
-              <span>I Am </span>
+              <span>I Am </span><span class="title"></span>
             </h1>
-            <ul class="d-flex list-unstyled my-3">
+            <ul class="d-flex list-unstyled my-3" id="homeList">
               <li class="fa-item">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
@@ -100,17 +100,17 @@
                   </p>
                   <div class="progress-container">
                     <div class="progress my-4">
-                      <div class="progress-bar bg-dark rounded-1" role="progressbar" aria-label="Design" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-dark rounded-1" role="progressbar" aria-label="Design" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                         <span>Web Design</span><span>95%</span>
                       </div>
                     </div>
                     <div class="progress my-4">
-                      <div class="progress-bar bg-dark rounded-1" role="progressbar" aria-label="Branding" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-dark rounded-1" role="progressbar" aria-label="Branding" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                         <span>Web Design</span><span>80%</span>
                       </div>
                     </div>
                     <div class="progress my-4">
-                      <div class="progress-bar bg-dark rounded-1" role="progressbar" aria-label="Development" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-dark rounded-1" role="progressbar" aria-label="Development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                         <span>Development</span><span>90%</span>
                       </div>
                     </div>
@@ -132,7 +132,7 @@
               <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                   <span>
-                    <i class="fa fa-laptop "></i>
+                    <i class="fa fa-laptop"></i>
                   </span>
                   <h3 class="my-3">web design</h3>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed blanditiis ipsam, nihil neque atque.</p>
@@ -141,7 +141,7 @@
               <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                   <span>
-                    <i class="fa fa-bullhorn "></i>
+                    <i class="fa fa-bullhorn"></i>
                   </span>
                   <h3 class="my-3">branding</h3>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed blanditiis ipsam, nihil neque atque.</p>
@@ -150,7 +150,7 @@
               <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                   <span>
-                    <i class="fa fa-umbrella "></i>
+                    <i class="fa fa-umbrella"></i>
                   </span>
                   <h3 class="my-3">development</h3>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed blanditiis ipsam, nihil neque atque.</p>
@@ -159,7 +159,7 @@
               <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                   <span>
-                    <i class="fa fa-diamond "></i>
+                    <i class="fa fa-diamond"></i>
                   </span>
                   <h3 class="my-3">creative design</h3>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed blanditiis ipsam, nihil neque atque.</p>
@@ -168,7 +168,7 @@
               <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                   <span>
-                    <i class="fa fa-television "></i>
+                    <i class="fa fa-television"></i>
                   </span>
                   <h3 class="my-3">fully responsive</h3>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed blanditiis ipsam, nihil neque atque.</p>
@@ -177,7 +177,7 @@
               <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                   <span>
-                    <i class="fa fa-camera "></i>
+                    <i class="fa fa-camera"></i>
                   </span>
                   <h3 class="my-3">retina ready</h3>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed blanditiis ipsam, nihil neque atque.</p>
@@ -426,28 +426,28 @@
               <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center my-4">
                   <i class="fa fa-users"></i>
-                  <h3>850</h3>
+                  <h3 data-target="180">0</h3>
                   <h6>happy customers</h6>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center my-4">
                   <i class="fa fa-thumbs-up"></i>
-                  <h3>320</h3>
+                  <h3 data-target="220">0</h3>
                   <h6>complete projects</h6>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center my-4">
                   <i class="fa fa-bullhorn"></i>
-                  <h3>9550</h3>
+                  <h3 data-target="550">0</h3>
                   <h6>lines of code</h6>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center my-4">
                   <i class="fa fa-cloud-download"></i>
-                  <h3>750</h3>
+                  <h3 data-target="350">0</h3>
                   <h6>files downloaded</h6>
                 </div>
               </div>
@@ -608,7 +608,9 @@
                       <i class="fa fa-location-arrow"></i>
                     </span>
                     <h3>address</h3>
-                    <p>6834 Hollywood Blvd - Los Angeles CA</p>
+                    <a href="https://maps.google.com/maps?q=6834 Hollywood Blvd - Los Angeles CA" target="_blank">
+                      6834 Hollywood Blvd - Los Angeles CA
+                    </a>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -617,7 +619,7 @@
                       <i class="fa fa fa-envelope"></i>
                     </span>
                     <h3>email</h3>
-                    <p>Support@website.com</p>
+                    <a href="mailto:Support@website.com">Support@website.com</a>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -626,7 +628,7 @@
                       <i class="fa fa-phone"></i>
                     </span>
                     <h3>phone</h3>
-                    <p>+20 010 2517 8918</p>
+                    <a href="tel:+2001025178918">+20 010 2517 8918</a>
                   </div>
                 </div>
               </div>
@@ -654,11 +656,14 @@
     <footer>
       <div class="container">
         <div class="row flex-column text-center py-4">
-          <p class="mb-0">Copy Right 2018 &copy; By Daniels All Rights Reserved</p>
+          <p class="mb-0">Copy Right <span id="year"></span> &copy; By Daniels All Rights Reserved</p>
         </div>
       </div>
     </footer>
-    <!-- Scripts -->
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- Import Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
