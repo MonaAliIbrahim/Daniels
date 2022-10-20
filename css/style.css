@@ -1,5 +1,6 @@
 /* 
 - General Style
+- Loading
 - Navbar
 - Home Section
 - About Section
@@ -23,6 +24,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 * {
@@ -58,6 +60,17 @@ section .section-header::after {
   height: 30px;
   z-index: -1;
   background: url('../images/dots.png');
+}
+
+/****************  Loading  **************/
+.loading {
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(#eee,#fff,#eee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
 }
 
 /****************  Navbar  **************/
@@ -170,6 +183,14 @@ nav .navbar-toggler span {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+#home ul li:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 #home ul li a {
