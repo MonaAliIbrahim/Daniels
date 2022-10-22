@@ -14,6 +14,13 @@ $(document).ready(function() {
     loop: true,
   });
 
+  // Hide Navbar after Click Event
+  $('#main-navbar .nav-item').click(function() {
+    $(this).children().addClass('active');
+    $('.navbar-collapse').removeClass('show');
+    $('.navbar-toggler').attr('aria-expanded','false');
+  });
+
   let homeListOffset = $('#homeList').offset().top,
       aboutSectionOffset = $('#about .progress').offset().top,
       ClientSectionOffset = $('#clients').offset().top,
